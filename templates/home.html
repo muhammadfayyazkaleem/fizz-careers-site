@@ -15,25 +15,30 @@
     </style>
 </head>
 <body>
+    {% include 'navbar.html' %}
+    <img class="img-fluid" id="banner" src="static\banner.jpg" >
     <div class="container">
     <h2 class="text-center pt-4 mb-4" style="color: rgb(57, 53, 53);">{{company_name}} Careers</h2>
-    <img class="img-fluid" id="banner" src="static\banner.jpg" >
-    <h3 class="text-center mt-4 mb-2" >About</h3>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h3 class="text-center pt-4 mb-2">Opening Positions</h3>
+    <div class="row" style="margin-bottom: 2px;">
+        <div class="col-md-6">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+            <img src="static\developer.jpg"  style="height: 320px; border-radius: 4px;">
+        </div>
+    </div>
+    <h3 class="text-center pt-4 mb-4">Opening Positions</h3>
     <div>
         {% for job in jobs%}
             {% include 'jobitem.html' %}
-        {% endfor %}
-        
-     
+        {% endfor %} 
     </div>
     <div class="text-center">
         <button type="button" class="btn btn-primary mb-2 mt-2"style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
             Contact Us
-        </button>
-        <p class="text-center" mt-4 pb-4> @Copyrights 2022, Fizz</p>
+        </button>    
     </div></div>
+    {% include 'footer.html' %}
 
 </body>
 </html>
