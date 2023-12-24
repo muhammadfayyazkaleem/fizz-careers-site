@@ -28,7 +28,15 @@ JOBS =[
         "location":"Karachi Pakistan",
         "salary":"RS. 1,000,00"
 
+    },
+        {
+        "id": 5,
+        "position":"Front End Engineer",
+        "location":"Rahim Yar Khan Pakistan",
+        "salary":"RS. 100,00"
+
     }
+
 ]
 
 @app.route("/")
