@@ -6,6 +6,10 @@
         </title>
     </head>
     <body>
+        {% include 'navbar.html' %}
+        {% include 'banner.html' %}
+        <p> Your application for the role of <b>{{ job['title'] }}</b>at fizz has been submitted.</p>
+
         <h4>Full Name</h4>
         <div>{{ application['full_name'] }}</div>
 
@@ -23,6 +27,8 @@
 
         <h4>Resume Url </h4>
         <div>{{ application['resume_url'] }}</div>
+
+        {% include 'footer.html' %}
         
     </body>
 </html>
