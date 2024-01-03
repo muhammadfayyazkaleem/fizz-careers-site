@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine , text
-db_connect_string ="mysql+pymysql://pddmygfs1a2ebc2v432e:pscale_pw_w1i6N0wARpvnPAE2YRcAlRl5tfM70BIgadZe3Qtb38W@aws.connect.psdb.cloud/fizzcareers?charset=utf8mb4"
+db_connect_string ="mysql+pymysql://zecaup74v20pw2z2dn9v:pscale_pw_Gwry7hjxx6X9jCxlLfV10PkGJXhVK2bNwscxYRqCBWa@aws.connect.psdb.cloud/fizzcareers?charset=utf8mb4"
 engine = create_engine(db_connect_string, connect_args= {
     'ssl': {
         "ssl_ca": "/etc/ssl/cert.pem"
